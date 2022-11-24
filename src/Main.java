@@ -15,7 +15,8 @@ public class Main {
 
        //printArray(ar2);
         //printArray(ar1);
-        printSumm(ar1);
+        System.out.println("сумма эл-в ar2 "+calculateSum(ar2));
+
     }
 
      static void printArray(int[] massiv)
@@ -29,12 +30,14 @@ public class Main {
                 System.out.print("\n");
         }
     }
-    static void printSumm(int[] massiv) {
+
+    static int calculateSum(int[] massiv) {
         int s = 0;
         for (int i = 0; i < massiv.length ; i++) {
-            s = s + massiv[i];
+            s += massiv[i];
         }
-        System.out.println(s);
+        return s;
+       // System.out.println(s);
     }
 
 }
