@@ -13,9 +13,19 @@ public class Main {
             ar2[i] = scanner.nextInt();
         }
 
-        //вывод массива поэлементно в консоль
-        for (int i = 0; i < ar2.length ; i++) {
-            System.out.println(ar2[i]);
+        printArray(ar2);
+        printArray(ar1);
+    }
+
+     static void printArray(int[] massiv)
+    {//вывод массива поэлементно в консоль
+        for (int i = 0; i < massiv.length ; i++) {
+            //System.out.print(massiv[i]+ ((i != massiv.length-1) ? " " : "\n"));
+            System.out.print(massiv[i]);
+            if (i != massiv.length-1)
+                System.out.print(" ");
+            else
+                System.out.print("\n");
         }
     }
 }
