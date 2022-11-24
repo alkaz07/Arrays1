@@ -13,8 +13,9 @@ public class Main {
             ar2[i] = scanner.nextInt();
         }
 
-        printArray(ar2);
-        printArray(ar1);
+       //printArray(ar2);
+        //printArray(ar1);
+        printSumm(ar1);
     }
 
      static void printArray(int[] massiv)
@@ -28,4 +29,13 @@ public class Main {
                 System.out.print("\n");
         }
     }
+    static void printSumm(int[] massiv) {
+        int s = 0;
+        for (int i = 0; i < massiv.length ; i++) {
+            s = s + massiv[i];
+        }
+        System.out.println(s);
+    }
+
 }
+
