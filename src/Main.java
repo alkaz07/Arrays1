@@ -5,17 +5,20 @@ public class Main {
     public static void main(String[] args) {
 	    int[] ar1 = {14, 21, 56, 81, 12};
         //int size=7;
-        int[] ar2 = new int[7];
+        /*int[] ar2 = new int[7];
        //ввод массива из консоли
         Scanner scanner=new Scanner(System.in);
         for (int i = 0; i < ar2.length; i++) {
             System.out.println("введите число");
             ar2[i] = scanner.nextInt();
-        }
+        }*/
+        int[] ar3 = inputArray(7);
 
        //printArray(ar2);
         //printArray(ar1);
-        System.out.println("сумма эл-в ar2 "+calculateSum(ar2));
+        System.out.println("сумма эл-в ar3 "+calculateSum(ar3));
+        int x1 = calculateSum(ar1);
+
 
     }
 
@@ -38,6 +41,18 @@ public class Main {
         }
         return s;
        // System.out.println(s);
+    }
+
+    static int[] inputArray(int n)
+    {
+        int[] a = new int[n];
+        //ввод массива из консоли
+        Scanner scanner=new Scanner(System.in);
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("введите число");
+            a[i] = scanner.nextInt();
+        }
+        return a;
     }
 
 }
