@@ -12,6 +12,7 @@ public class Main {
             System.out.println("введите число");
             ar2[i] = scanner.nextInt();
         }*/
+        //alkaz test
         int[] ar3 = inputArray(7);
 
        //printArray(ar2);
